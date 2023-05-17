@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    overflow-x: hidden;
+}
+
+
+body::-webkit-scrollbar{
+  width: 10px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #191c32;
+}
+
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.brand {
+    margin-top: -7px;
+}
+
+.brand span{
+    color: rgb(249, 219, 50);
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.menu .active {
+    color: rgb(238, 214, 80);
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.menu .active:hover {
+    color: white;
+}
+
+.menu a:hover {
+    background-color: rgb(222, 188, 0);
+    margin: 30px;
+    border-radius: 0.5em;
+}
+
+.main {
+    margin: 0  auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 8px;
+}
+
+span {
+    color: rgb(255, 223, 45);
+}
+
+.boton {
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    background-color: rgba(241, 208, 20, 0.915);
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 10px 20px -5px rgb(255, 223, 45);
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+.main img{
+    border-radius: 50%;
+    border: 7px solid rgb(255, 223, 45);
+    width: 550px;
+    height: 550px;
+    box-shadow: 0px 20px 50px -5px rgb(255, 223, 45);
+    margin-left: 100px;
+}
+.info-content p {
+    font-size: 2em;
+    margin-bottom: 16px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.about img{
+    width: 100%;
+    grid-column: 1/5;
+}   
+
+.about-info {
+    grid-column: 5/10;
+    padding: 4em;
+}
+
+.about-info h2 {
+    font-size: 3em;
+    color: #191c32;
+}
+
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: rgb(255, 223, 45);
+    margin-top: 10px;
+    margin-bottom: 2em;
+}
+
+.about p {
+    margin-bottom: 1.5em;
+}
+
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: #191c32;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+
+.portfolio-heading h2 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.contact-heading h2 {
+  text-align: center;
+  font-size: 3.5em;
+  font-style: bold;
+  color: white;
+}
+
+.contact-form h4 {
+  color: white;
+}
+
+.portfolio .container {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 400px;
+  background-color: #2b3058;
+  margin: 1em;
+  padding-bottom: 20px;
+}
+
+.card__img {
+  width: 400px;
+  height: 200px;
+  background-image: url(img/b1.jpeg);
+  background-size: cover;
+}
+
+.card__title {
+  padding: 20px;
+  color: white;
+}
+
+.card__proyect-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.card__proyect-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.card__proyect-links i {
+  font-size: 1.5em;
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.contact-section {
+  padding: 3em;
+  margin: 0 auto;
+}
+
+.container-contact {
+  margin: 0 auto;
+  margin-top: 6em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 8em;
+}
+
+.contact-section img {
+  width: 750px;
+  height: 700px;
+  bottom: 0px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  margin-top: 2em;
+}
+.form-group textarea {
+  height: 150px;
+  padding: 1.5em;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .input {
+  padding: 10px 20px;
+  margin-bottom: 1em;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+.form-group .btn-submit {
+  padding: 10px 20px;
+  margin: 1em;
+  border-radius: 20px;
+  border: none;
+  text-transform: uppercase;
+  background-color: rgb(255, 223, 45);
+}
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 150px;
+  padding: 2em;
+  background-color: rgb(255, 223, 45);
+}
+
+.footer-content h2 {
+  font-size: 3em;
+}
+
+.footer-content h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.sotial-networks {
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.sotial-networks i {
+  font-size: 1.5em;
+}
+
+.skills_section{
+    width: 100%;
+    height: 100vh;
+    padding: 0px 13%;
+    background-color: rgba(0, 0, 0, 0.082);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.skills_head{
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skills_head h2{
+    font-size: 4.5em;
+    margin-bottom: -5px;
+}
+.skills_head h2 span{
+    color: black;
+
+}
+.skills_main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+.circular-progress{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#ebe117 3.6deg, #ededed 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress::before{
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.progress-value{
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(255, 223, 45);
+}
+.text{
+  font-size: 30px;
+  font-weight: 500;
+  color: #606060;
+}
+
+.linea {
+  height: 2px;
+}
